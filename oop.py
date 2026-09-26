@@ -51,5 +51,17 @@ std_2 = GraduateStudent(
     research_topic="News"
 )
 
-print(std_2.name)
+# print(std_2.name)
 
+std_3 = UndergraduateStudent(
+    name="Sakib",
+    email="sakib@gmail.com",
+    student_id=1200,
+    age=22,
+    department="BBA",
+    semester="6th"
+)
+
+
+std_2.get_student_type()
+std_3.get_student_type()
