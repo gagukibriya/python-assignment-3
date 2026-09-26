@@ -21,7 +21,7 @@ class Student :
         return total
 
     def get_student_type(self):
-        print("The are not valid.")
+        print("Data are not valid.")
 
 
 class UndergraduateStudent(Student):
