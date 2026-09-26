@@ -1,15 +1,18 @@
 class Student :
     def __init__(self,name,student_id,email,age,department):
         self.name = name
-        self.student = student_id
-        self.email = email
+        self.student_id = student_id
+        self._email = email
         self.age = age
         self.department = department
 
-    def desplay_info(self,needs):
-        print(needs)
+    def get_mail(self):
+        return self._email
 
-    def calculate_result(self,year_1,year_2,year_3,year_4):
+    def display_info(self):
+        print(self)
+
+    def calculate_result(self,year_1=0,year_2=0,year_3=0,year_4=0):
         sum = year_1 + year_2 + year_3 + year_4
         return sum
 
@@ -18,7 +21,8 @@ class Student :
 
 
 class UndergraduateStudent(Student):
-    def __init__ (self,semester):
+    def __init__ (self,name,student_id,email,age,department,semester):
+        super().__init__(name,student_id,email,age,department)
         self.semester = semester
 
     def get_student_type (self):
@@ -35,6 +39,6 @@ class GraduateStudent(Student):
 
 student_1 = Student("Kibriya",1201,"test@gmail.com","24","CSE")
 
-# student_1.desplay_info(student_1.name)
+# print(student_1.calculate_result(20,20,30))
 
-student_2 = GraduateStudent()
+
