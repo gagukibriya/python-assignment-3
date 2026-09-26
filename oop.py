@@ -12,13 +12,13 @@ class Student :
     def display_info(self):
         print("Student Name :", self.name)
         print("Student ID:", self.student_id)
-        print("Email :",self.get_mail)
+        print("Email :",self.__email)
         print("Student Age :",self.age)
         print("Department :",self.department)
 
     def calculate_result(self,year_1=0,year_2=0,year_3=0,year_4=0):
-        sum = year_1 + year_2 + year_3 + year_4
-        return sum
+        total = year_1 + year_2 + year_3 + year_4
+        return total
 
     def get_student_type(self):
         print("The are not valid.")
@@ -67,5 +67,9 @@ std_3 = UndergraduateStudent(
 )
 
 
-std_2.get_student_type()
-std_3.get_student_type()
+# std_2.get_student_type()
+# std_3.get_student_type()
+
+# student_1.display_info()
+# std_2.display_info()
+# std_3.display_info()
