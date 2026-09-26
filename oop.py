@@ -2,15 +2,19 @@ class Student :
     def __init__(self,name,student_id,email,age,department):
         self.name = name
         self.student_id = student_id
-        self._email = email
+        self.__email = email
         self.age = age
         self.department = department
 
     def get_mail(self):
-        return self._email
+        return self.__email
 
     def display_info(self):
-        print(self)
+        print("Student Name :", self.name)
+        print("Student ID:", self.student_id)
+        print("Email :",self.get_mail)
+        print("Student Age :",self.age)
+        print("Department :",self.department)
 
     def calculate_result(self,year_1=0,year_2=0,year_3=0,year_4=0):
         sum = year_1 + year_2 + year_3 + year_4
