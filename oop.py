@@ -30,7 +30,8 @@ class UndergraduateStudent(Student):
 
 
 class GraduateStudent(Student):
-    def __init__(self,research_topic):
+    def __init__(self,name,student_id,email,age,department,research_topic):
+        super().__init__(name,student_id,email,age,department)
         self.research_topic = research_topic
 
     def get_student_type(self):
