@@ -42,4 +42,14 @@ student_1 = Student("Kibriya",1201,"test@gmail.com","24","CSE")
 
 # print(student_1.calculate_result(20,20,30))
 
+std_2 = GraduateStudent(
+    name="Bokkar",
+    email="test2@gmail.com",
+    student_id=1202,
+    age=67,
+    department="English",
+    research_topic="News"
+)
+
+print(std_2.name)
 
